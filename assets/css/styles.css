@@ -1,0 +1,734 @@
+/***********************
+    1.FONT
+    2.BASIC
+    3.Desktop/Web
+    4.Mobile 991px
+    5.Mobile 768px
+************************/
+
+
+/*======================
+        1.FONT
+========================*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&amp;display=swap');
+
+/*======================
+        2.BASIC
+========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", Arial, sans-serif;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b2b1b1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b2b1b1;
+}
+
+@media screen and (max-width: 992px) {
+     ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+/*======================
+        3.Desktop/Web
+========================*/
+
+
+/* Navbar section */
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #42455a;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    margin-left: 70px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin-right: 3rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #b2b1b1;
+    font-size: 16px;
+    padding: .5rem 0.5rem;
+}
+
+header .logo {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 70px;
+    color: #b2b1b1;
+}
+
+header .logo ul {
+    list-style: none;
+    display: flex;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    margin-left: 70px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo .logo_img {
+    height: 40px;
+    width: auto;
+}
+
+header .btn-mobile {
+    font-size: 25px;
+    color: #b2b1b1;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+
+.fa-times {
+    transform: rotateZ(180deg);
+}
+
+
+/* home section */
+
+#home {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 6rem;
+    background: #42455a;
+}
+
+#home .banner-picture img {
+    width: 35vw;
+}
+
+#home .content h2 {
+    font-size: 17px;
+    color: white;
+}
+
+#home .content h1 {
+    font-size: 43px;
+    color: white;
+}
+
+#home .content p {
+    font-size: 15px;
+    color: #e1b783;
+    line-height: 25px;
+}
+
+#home .content p span {
+    color: white;
+}
+
+#home .content .cv-btn {
+    outline: none;
+    border: 2px solid transparent;
+    color: #19dafa;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 2rem 0;
+    height: 40px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#home .content .cv-btn .cv-text {
+    margin: 17px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#home .content .isosmed {
+    margin: auto 10px;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline;
+}
+
+#home .content .isosmed a {
+    margin: auto 10px;
+    color: white;
+}
+
+
+/* about section */
+
+#about {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: #2d2e34;
+}
+
+#about h1 {
+    font-size: 4rem;
+    margin-top: 125px;
+    color: #b2b1b1;
+    position: relative;
+}
+
+#about h1:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    left: calc(50% - 59px);
+    bottom: -2rem;
+    background-color: #e1b783;
+}
+
+#about h1:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    left: calc(50% + 15px);
+    bottom: -2rem;
+    background-color: #e1b783;
+}
+
+#about h1 span {
+    margin-left: -10px;
+}
+
+#about h1 span:after {
+    content: "";
+    position: absolute;
+    bottom: -3rem;
+    left: calc(50% - 7px);
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    left: calc(50% - 7px);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #e1b783;
+}
+
+#about .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#about .wrapper .imagea img {
+    margin-top: 50px;
+    width: 290px;
+    height: 290px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+#about .wrapper .content {
+    width: 50vw;
+}
+
+#about .wrapper .content p {
+    font-size: 2rem;
+    margin-left: -150px;
+    margin-top: -10px;
+    color: #b2b1b1;
+    line-height: 1.5;
+}
+
+#about .wrapper .content .desc .name {
+    font-size: 1.8rem;
+    margin-left: -150px;
+    margin-top: 20px;
+    color: #e1b783
+}
+
+#about .wrapper .content .desc .iname {
+    font-size: 1.8rem;
+    margin-top: 6px;
+    margin-left: -150px;
+    color: #b2b1b1;
+}
+
+#about .wrapper .content .desc .born {
+    font-size: 1.8rem;
+    margin-left: -150px;
+    margin-top: 20px;
+    color: #e1b783
+}
+
+#about .wrapper .content .desc .iborn {
+    font-size: 1.8rem;
+    margin-top: 6px;
+    margin-left: -150px;
+    color: #b2b1b1;
+}
+
+#about .wrapper .content .desc .phone {
+    font-size: 1.8rem;
+    margin-left: 100px;
+    margin-top: -126px;
+    color: #e1b783;
+}
+
+#about .wrapper .content .desc .iphone {
+    font-size: 1.8rem;
+    margin-top: 6px;
+    margin-left: 100px;
+}
+
+#about .wrapper .content .desc .iphone a {
+    color: #b2b1b1;
+    text-decoration: none;
+}
+
+#about .wrapper .content .desc .city {
+    font-size: 1.8rem;
+    margin-left: 100px;
+    margin-top: 20px;
+    color: #e1b783;
+}
+
+#about .wrapper .content .desc .icity {
+    font-size: 1.8rem;
+    margin-top: 6px;
+    margin-left: 100px;
+    color: #b2b1b1;
+}
+
+#about .wrapper .content .desc .interest {
+    font-size: 1.8rem;
+    margin-left: 390px;
+    margin-top: -126px;
+    color: #e1b783;
+}
+
+#about .wrapper .content .desc .iinterest {
+    font-size: 1.8rem;
+    margin-top: 6px;
+    margin-left: 390px;
+    color: #b2b1b1;
+}
+
+#about .wrapper .content .desc .nim {
+    font-size: 1.8rem;
+    margin-left: 390px;
+    margin-top: 20px;
+    color: #e1b783;
+}
+
+#about .wrapper .content .desc .inim {
+    font-size: 1.8rem;
+    margin-top: 6px;
+    margin-left: 390px;
+    color: #b2b1b1;
+}
+
+
+/*======================
+        4.Mobile 991px
+========================*/
+
+@media (max-width:991px) {
+    /* basic section */
+    html {
+        font-size: 50%;
+    }
+    /* home section */
+    header {
+        z-index: 2;
+    }
+    header .btn-mobile {
+        display: block;
+    }
+    header nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        background: #42455a;
+    }
+    header nav ul {
+        height: 100%;
+        flex-flow: column;
+        justify-content: center;
+    }
+    header nav ul li {
+        margin: 2rem 0;
+    }
+    header nav ul li a {
+        font-size: 5rem;
+    }
+    header .logo {
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: bold;
+        color: #b2b1b1;
+        width: 100vw;
+        display: flex;
+        margin-right: -70px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .nav-toggle {
+        left: 0;
+    }
+    #home .content h2 {
+        font-size: 17px;
+        color: white;
+        margin-left: 80px;
+    }
+    #home .content h1 {
+        font-size: 43px;
+        color: white;
+        margin-left: 80px;
+    }
+    #home .content p {
+        font-size: 15px;
+        color: #e1b783;
+        line-height: 25px;
+        margin-left: 80px;
+    }
+    #home .content .isosmed {
+        margin: auto -5px;
+        cursor: pointer;
+        font-size: 20px;
+        display: block;
+        margin-left: 80px;
+    }
+    #home .content .cv-btn {
+        outline: none;
+        border: 2px solid transparent;
+        color: #19dafa;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 2rem 0;
+        height: 40px;
+        border: 2px solid transparent;
+        background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        margin-left: 80px;
+    }
+    /* about section */
+    #about {
+        display: grid;
+        place-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        background: #2d2e34;
+    }
+    #about h1 {
+        font-size: 4rem;
+        margin-top: 60px;
+        color: #b2b1b1;
+        position: relative;
+    }
+    #about .wrapper .imagea img {
+        margin-top: 50px;
+        width: 280px;
+        height: 340px;
+        margin-bottom: 200px;
+        margin-left: 10px;
+    }
+    #about .wrapper .content {
+        width: 37vw;
+    }
+    #about .wrapper .content p {
+        font-size: 2rem;
+        margin-left: -40px;
+        margin-top: -10px;
+        color: #b2b1b1;
+        line-height: 1.5;
+    }
+    #about .wrapper .content .desc .name {
+        font-size: 1.8rem;
+        margin-left: -340px;
+        margin-top: 80px;
+        color: #e1b783
+    }
+    #about .wrapper .content .desc .iname {
+        font-size: 1.8rem;
+        margin-top: 6px;
+        margin-left: -340px;
+        color: #b2b1b1;
+    }
+    #about .wrapper .content .desc .born {
+        font-size: 1.8rem;
+        margin-left: -340px;
+        margin-top: 20px;
+        color: #e1b783
+    }
+    #about .wrapper .content .desc .iborn {
+        font-size: 1.8rem;
+        margin-top: 6px;
+        margin-left: -340px;
+        color: #b2b1b1;
+    }
+    #about .wrapper .content .desc .phone {
+        font-size: 1.8rem;
+        margin-left: -100px;
+        margin-top: -105px;
+        color: #e1b783;
+    }
+    #about .wrapper .content .desc .iphone {
+        font-size: 1.8rem;
+        margin-top: 8px;
+        margin-left: -100px;
+    }
+    #about .wrapper .content .desc .iphone a {
+        color: #b2b1b1;
+        text-decoration: none;
+    }
+    #about .wrapper .content .desc .city {
+        font-size: 1.8rem;
+        margin-left: -100px;
+        margin-top: 20px;
+        color: #e1b783;
+    }
+    #about .wrapper .content .desc .icity {
+        font-size: 1.8rem;
+        margin-top: 6px;
+        margin-left: -100px;
+        color: #b2b1b1;
+    }
+    #about .wrapper .content .desc .interest {
+        font-size: 1.8rem;
+        margin-left: 120px;
+        margin-top: -105px;
+        color: #e1b783;
+    }
+    #about .wrapper .content .desc .iinterest {
+        font-size: 1.8rem;
+        margin-top: 6px;
+        margin-left: 120px;
+        color: #b2b1b1;
+    }
+    #about .wrapper .content .desc .nim {
+        font-size: 1.8rem;
+        margin-left: 120px;
+        margin-top: 20px;
+        color: #e1b783;
+    }
+    #about .wrapper .content .desc .inim {
+        font-size: 1.8rem;
+        margin-top: 6px;
+        margin-left: 120px;
+        color: #b2b1b1;
+    }
+}
+
+
+/*======================
+        5.Mobile 768px
+========================*/
+
+@media (max-width:768px) {
+    /* home section */
+    #home {
+        flex-flow: column-reverse;
+    }
+    #home .content {
+        text-align: center;
+    }
+    #home .banner-picture img {
+        margin-top: 7rem;
+        width: 250px;
+    }
+    #home .content h2 {
+        font-size: 17px;
+        color: white;
+        margin-left: auto;
+        margin-top: -15px;
+    }
+    #home .content h1 {
+        font-size: 43px;
+        color: white;
+        margin-left: auto;
+    }
+    #home .content p {
+        font-size: 15px;
+        color: #e1b783;
+        line-height: 25px;
+        margin-left: auto;
+    }
+    #home .content .isosmed {
+        margin: auto -5px;
+        cursor: pointer;
+        font-size: 20px;
+        display: block;
+        margin-left: auto;
+    }
+    #home .content .cv-btn {
+        outline: none;
+        border: 2px solid transparent;
+        color: #19dafa;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 2rem 0;
+        height: 40px;
+        border: 2px solid transparent;
+        background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        margin-left: auto;
+    }
+    /* about section */
+    #about {
+        display: grid;
+        place-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        background: #2d2e34;
+    }
+    #about h1 {
+        font-size: 4rem;
+        margin-top: 80px;
+        color: #b2b1b1;
+        position: relative;
+        margin-left: -45px;
+    }
+    #about .wrapper .imagea img {
+        margin-top: -250px;
+        width: 280px;
+        height: 340px;
+        margin-left: 120px;
+    }
+    #about .wrapper .content {
+        width: 37vw;
+    }
+    #about .wrapper .content p {
+        font-size: 2rem;
+        margin-right: 130px;
+        margin-left: -350px;
+        margin-top: 400px;
+        color: #b2b1b1;
+        line-height: 1.5;
+    }
+    #about .wrapper .content .desc .name {
+        font-size: 1.8rem;
+        margin-left: -340px;
+        margin-top: 20px;
+        color: #e1b783
+    }
+    #about .wrapper .content .desc .iname {
+        font-size: 1.8rem;
+        margin-top: 6px;
+        margin-left: -340px;
+        color: #b2b1b1;
+    }
+    #about .wrapper .content .desc .born {
+        font-size: 1.8rem;
+        margin-left: -340px;
+        margin-top: 20px;
+        color: #e1b783
+    }
+    #about .wrapper .content .desc .iborn {
+        font-size: 1.8rem;
+        margin-top: 6px;
+        margin-left: -340px;
+        color: #b2b1b1;
+    }
+    #about .wrapper .content .desc .phone {
+        font-size: 1.8rem;
+        margin-left: -100px;
+        margin-top: -105px;
+        color: #e1b783;
+    }
+    #about .wrapper .content .desc .iphone {
+        font-size: 1.8rem;
+        margin-top: 8px;
+        margin-left: -100px;
+    }
+    #about .wrapper .content .desc .iphone a {
+        color: #b2b1b1;
+        text-decoration: none;
+    }
+    #about .wrapper .content .desc .city {
+        font-size: 1.8rem;
+        margin-left: -100px;
+        margin-top: 20px;
+        color: #e1b783;
+    }
+    #about .wrapper .content .desc .icity {
+        font-size: 1.8rem;
+        margin-top: 6px;
+        margin-left: -100px;
+        color: #b2b1b1;
+    }
+    #about .wrapper .content .desc .interest {
+        font-size: 1.8rem;
+        margin-left: -340px;
+        margin-top: 15px;
+        color: #e1b783;
+    }
+    #about .wrapper .content .desc .iinterest {
+        font-size: 1.8rem;
+        margin-top: 6px;
+        margin-left: -340px;
+        color: #b2b1b1;
+    }
+    #about .wrapper .content .desc .nim {
+        font-size: 1.8rem;
+        margin-left: -100px;
+        margin-top: -45px;
+        color: #e1b783;
+    }
+    #about .wrapper .content .desc .inim {
+        font-size: 1.8rem;
+        margin-top: 6px;
+        margin-left: -100px;
+        margin-bottom: 80px;
+        color: #b2b1b1;
+    }
+}
