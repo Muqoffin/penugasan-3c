@@ -19,19 +19,5 @@
     });
 }());
 
-// header sidebar start 
-$(document).ready(function() {
-        $('.btn-mobile').click(function() {
-            $(this).toggleClass('fa-times');
-            $('nav').toggleClass('nav-toggle');
-        })
-
-        $('nav ul li a').click(function() {
-            $('.btn-mobile').removeClass('fa-times');
-            $('nav').removeClass('nav-toggle');
-        })
-    })
-    // header sidebar end 
-
 // Aos js 
 AOS.init();
