@@ -85,10 +85,7 @@ header .logo {
 
 header .logo ul {
     list-style: none;
-    display: flex;
-    margin-top: 3.5rem;
-    margin-bottom: 3rem;
-    margin-left: 70px;
+    margin: 3.5rem 0 3rem 70px;
     align-items: center;
     justify-content: space-around;
 }
@@ -96,18 +93,6 @@ header .logo ul {
 header .logo .logo_img {
     height: 40px;
     width: auto;
-}
-
-header .btn-mobile {
-    font-size: 25px;
-    color: #b2b1b1;
-    cursor: pointer;
-    z-index: 10;
-    display: none;
-}
-
-.fa-times {
-    transform: rotateZ(180deg);
 }
 
 
@@ -124,7 +109,7 @@ header .btn-mobile {
 }
 
 #home .banner-picture img {
-    width: 35vw;
+    width: 40rem;
 }
 
 #home .content h2 {
@@ -148,28 +133,18 @@ header .btn-mobile {
 }
 
 #home .content .cv-btn {
-    outline: none;
-    border: 2px solid transparent;
-    color: #2d2e34;
     border-radius: 10px;
-    cursor: pointer;
     margin: 2rem 0;
     height: 40px;
-    border: 2px solid transparent;
-    background-image: #fff;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
 }
 
 #home .content .cv-btn .cv-text {
     margin: 17px;
     font-size: 13px;
-    font-weight: bold;
 }
 
 #home .content .isosmed {
     margin: auto 10px;
-    cursor: pointer;
     font-size: 20px;
     display: inline;
 }
